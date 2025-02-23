@@ -284,7 +284,7 @@ p {
 /***** page title  *****/
 /**** ########################################################################## ****/
 .page-title-area {
-    background: url('../img/jard2.jpg') no-repeat scroll center top / cover;
+    background: url('../img/banner-paisagimos.jpg') no-repeat scroll center top / cover;
     padding: 70px 0;
     position: relative;
 }
@@ -570,15 +570,15 @@ ul li a.menu-active {
 }
 
 .slider-bg-1 {
-    background: url('../img/slider/jard2.jpg') no-repeat scroll center center / cover;
+    background: url('../img/slider/banner-paisagimos.jpg') no-repeat scroll center center / cover;
 }
 
 .slider-bg-2 {
-    background: url('../img/slider/02.jpg') no-repeat scroll center center / cover;
+    background: url('../img/slider/banner-paisagimos.jpg') no-repeat scroll center center / cover;
 }
 
 .slider-bg-3 {
-    background: url('../img/slider/03.jpg') no-repeat scroll center center / cover;
+    background: url('../img/slider/banner-paisagimos.jpg') no-repeat scroll center center / cover;
 }
 
 .slider-bg-4 {
