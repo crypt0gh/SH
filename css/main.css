@@ -237,6 +237,53 @@ p {
 
 /***** button part end *****/
 
+
+/***** button service GET IN TOUCH *****/
+
+.get-in-touch-btn-container {
+        text-align: center;
+        margin-top: 30px;
+        padding: 0 15px; /* Add padding to ensure space on small screens */
+    }
+
+    .get-in-touch-btn {
+        background-color: #007bff; /* Blue background */
+        color: white; /* White text */
+        font-size: 16px;
+        font-weight: bold;
+        padding: 12px 30px;
+        border-radius: 50px; /* Rounded corners */
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3); /* Shadow effect */
+    }
+
+    .get-in-touch-btn:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+        transform: translateY(-3px); /* Lift effect on hover */
+    }
+
+    .get-in-touch-btn:active {
+        background-color: #004085; /* Even darker blue when clicked */
+        transform: translateY(1px); /* Pressed effect */
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .get-in-touch-btn {
+            font-size: 14px; /* Smaller font size for tablets */
+            padding: 10px 25px; /* Adjust padding for smaller screens */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .get-in-touch-btn {
+            font-size: 14px; /* Smaller font size for mobile */
+            padding: 8px 20px; /* Adjust padding for mobile screens */
+        }
+    }
+
+
 /***** section title part star *****/
 
 .section-title {
