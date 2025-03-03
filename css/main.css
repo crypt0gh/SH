@@ -247,7 +247,7 @@ p {
     }
 
     .get-in-touch-btn {
-        background-color: #007bff; /* Blue background */
+        background-color: #ff0000; /* Red background */
         color: white; /* White text */
         font-size: 16px;
         font-weight: bold;
@@ -255,16 +255,16 @@ p {
         border-radius: 50px; /* Rounded corners */
         text-decoration: none;
         transition: background-color 0.3s ease, transform 0.3s ease;
-        box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3); /* Shadow effect */
+        box-shadow: 0 6px 15px rgba(255, 0, 0, 0.3); /* Red shadow */
     }
 
     .get-in-touch-btn:hover {
-        background-color: #0056b3; /* Darker blue on hover */
+        background-color: #cc0000; /* Darker red on hover */
         transform: translateY(-3px); /* Lift effect on hover */
     }
 
     .get-in-touch-btn:active {
-        background-color: #004085; /* Even darker blue when clicked */
+        background-color: #990000; /* Even darker red when clicked */
         transform: translateY(1px); /* Pressed effect */
     }
 
