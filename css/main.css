@@ -1354,7 +1354,7 @@ blockquote p {
 .single-client-info img {
     position: absolute;
     width: 110px !important;
-    top: -25%;
+    top: -24%;
     left: 50%;
     transform: translate(-50%, 0);
     border-radius: 50%;
