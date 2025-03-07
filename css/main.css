@@ -268,20 +268,20 @@ p {
         transform: translateY(1px); /* Pressed effect */
     }
 
-    /* Responsive Styles */
-    @media (max-width: 768px) {
+/*     /* Responsive Styles */
+/*     @media (max-width: 768px) { */
         .get-in-touch-btn {
-            font-size: 14px; /* Smaller font size for tablets */
-            padding: 10px 25px; /* Adjust padding for smaller screens */
-        }
-    }
+/*             font-size: 14px; /* Smaller font size for tablets */ */
+/*             padding: 10px 25px; /* Adjust padding for smaller screens */ */
+/*         } */
+/*     } */
 
-    @media (max-width: 480px) {
-        .get-in-touch-btn {
-            font-size: 14px; /* Smaller font size for mobile */
-            padding: 8px 20px; /* Adjust padding for mobile screens */
-        }
-    }
+/*     @media (max-width: 480px) { */
+/*         .get-in-touch-btn { */
+/*             font-size: 14px; /* Smaller font size for mobile */ */
+/*             padding: 8px 20px; /* Adjust padding for mobile screens */ */
+/*         } */
+    } */
 
 
 /***** section title part star *****/
