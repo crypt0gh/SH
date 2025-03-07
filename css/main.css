@@ -1034,11 +1034,17 @@ blockquote p {
     opacity: 1;
 }
 
-.single-gallery img {
+/* .single-gallery img {
     width: 100%;
 /*     margin-top: 9px;
  */
+} */
+.single-galleryy img {
+    width: 100%;
+    margin-top: 9px;
+
 }
+
 .gallery-style-two {
     background-color: #F6F6F6;
 }
