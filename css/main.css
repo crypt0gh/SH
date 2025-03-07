@@ -2089,8 +2089,9 @@ span.widget-title {
 }
 
 .copyright-info {
-    padding: 25px 0;
+    padding: 25px 100px;
     overflow: hidden;
+    position: absolute;
     background-color: #333333;
 }
 
