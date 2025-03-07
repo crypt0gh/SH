@@ -21,195 +21,164 @@
     <link rel="stylesheet" href="style.css">
 
 <style>
-/* Resetando margens e padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Corpo e tipografia */
-body {
-    font-family: 'Helvetica Neue', sans-serif;
-    background: linear-gradient(135deg, #00bcd4, #3f51b5);
-    color: #fff;
-    line-height: 1.6;
-}
-
-/* Container principal */
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px;
-    text-align: center;
-}
-
-/* Título */
-h1 {
-    font-size: 2.5em; /* Reduzido */
-    color: #fff;
-    margin-bottom: 30px; /* Ajustado */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-/* Planos - Flexbox ajustado para um design mais fluido */
-.plans {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-}
-
-/* Plano individual */
-.plan {
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    width: 30%;
-    padding: 20px; /* Ajustado */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #333;
-}
-
-.plan:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
-}
-
-/* Título do plano */
-.plan h2 {
-    font-size: 1.8em; /* Reduzido */
-    color: #3f51b5;
-    margin-bottom: 20px;
-}
-
-/* Lista de benefícios */
-.plan ul {
-    list-style: none;
-    margin-bottom: 20px; /* Ajustado */
-    font-size: 1em; /* Reduzido */
-}
-
-.plan ul li {
-    margin-bottom: 12px; /* Ajustado */
-    color: #333;
-}
-
-/* Preço */
-.plan .price {
-    font-size: 2em; /* Reduzido */
-    font-weight: bold;
-    color: #3f51b5;
-    margin-bottom: 20px; /* Ajustado */
-}
-
-.plan .price span {
-    font-size: 1.3em; /* Reduzido */
-    color: #00bcd4;
-}
-
-/* Botão de ação */
-.plan button {
-    background-color: #00bcd4;
-    color: #fff;
-    padding: 12px 25px; /* Ajustado */
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1em; /* Reduzido */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.plan button:hover {
-    background-color: #0097a7;
-    transform: scale(1.05);
-}
-
-/* Seção de serviços */
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.service {
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    width: 48%;
-    padding: 20px; /* Ajustado */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #333;
-}
-
-.service:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
-}
-
-.service h3 {
-    font-size: 1.8em; /* Reduzido */
-    color: #3f51b5;
-    margin-bottom: 20px;
-}
-
-.service ul {
-    list-style: none;
-    color: #333;
-    font-size: 1em; /* Reduzido */
-}
-
-.service ul li {
-    margin-bottom: 10px; /* Ajustado */
-}
-
-/* Responsividade */
-@media screen and (max-width: 768px) {
-    .plans {
-        flex-direction: column;
-        align-items: center;
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .plan {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    .services {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 480px) {
     body {
-        font-size: 0.9em;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
     }
 
-    .container {
-        width: 100%;
+    h1, h2, h3 {
+      color: #2a2a2a;
+    }
+
+    /* Cabeçalho */
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    /* Seções */
+    .services, .planos, .contact {
+      padding: 40px;
+      margin: 20px auto;
+      max-width: 1200px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .services h2, .planos h2, .contact h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Grid para os serviços */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-item {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .service-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-item img {
+      width: 100%;
+      border-radius: 8px;
+      height: auto;
+    }
+
+    .service-item h3 {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      color: #0077b6;
+    }
+
+    /* Planos de Serviço */
+    .plan-item {
+      background-color: #eeeeee;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .plan-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .plan-item h3 {
+      margin-top: 15px;
+      font-size: 1.5rem;
+      color: #2a2a2a;
+    }
+
+    /* Formulário de Contato */
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background-color: #003366;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #0077b6;
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .services, .planos, .contact {
         padding: 20px;
+      }
     }
 
-    h1 {
-        font-size: 2em; /* Reduzido */
-    }
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
 
-    .plan, .service {
-        width: 100%;
+      .service-item h3, .plan-item h3 {
+        font-size: 1rem;
+      }
     }
-}
-
-</style>
+  </style>
 </head>
 <body>
     <div class="preloader">
@@ -268,174 +237,119 @@ h1 {
         </div>
     </header>
 
-    <section class="page-title-area parallax">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <div class="page-title">
-                        <div class="title">
-                            <h2>price table</h2>
-                        </div>
-                        <ul class="breadcrumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li class="active">price</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="price-area section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <div class="section-title text-center">
-                        <h2>price <span>table</span></h2>
-                        <p>Explore our gardening and landscaping services, designed to transform your outdoor spaces into beautiful, functional areas.</p>
-                        <p>Don't forget to check out our other services as well, including painting, repairs, and tech support!</p>
-                        <p>Get in Touch for a Quote</p>
-                    </div>
-                </div>
-            </div>
-
-
-<div class="container">
-        <h1>Planos de Jardinagem e Paisagismo</h1>
-        
-        <!-- Seção de Planos -->
-        <div class="plans">
-            <!-- Plano Básico -->
-            <div class="plan">
-                <h2>Plano Básico</h2>
-                <ul>
-                    <li>Planejamento inicial do jardim</li>
-                    <li>Seleção de plantas fáceis de cuidar</li>
-                    <li>Execução de plantio básico</li>
-                    <li>Rega manual ocasional</li>
-                </ul>
-                <div class="price-lit">                        
-                    <a href="https://wa.me/5531998353307" class="garden-btn move-eff"><span>Contratar plano Básico</span></a>
-                </div>
-            </div>
-
-            <!-- Plano Padrão -->
-            <div class="plan">
-                <h2>Plano Padrão</h2>
-                <ul>
-                    <li>Planejamento personalizado do jardim</li>
-                    <li>Seleção de plantas ornamentais e florais</li>
-                    <li>Execução completa do plantio</li>
-                    <li>Sistema de irrigação automatizado</li>
-                    <li>Manutenção mensal incluída</li>
-                </ul>
-                <div class="price-lit">                        
-                    <a href="https://wa.me/5531998353307" class="garden-btn move-eff"><span>Contratar plano Padrão</span></a>
-                </div>
-            </div>
-
-            <!-- Plano Avançado -->
-            <div class="plan">
-                <h2>Plano Avançado</h2>
-                <ul>
-                    <li>Planejamento detalhado e exclusivo</li>
-                    <li>Seleção de plantas de diferentes texturas e cores</li>
-                    <li>Execução completa do projeto paisagístico</li>
-                    <li>Instalação de fontes e outros elementos decorativos</li>
-                    <li>Sistema de irrigação e drenagem completo</li>
-                    <li>Manutenção semestral incluída</li>
-                </ul>
-                <div class="price-lit">                        
-                    <a href="https://wa.me/5531998353307" class="garden-btn move-eff"><span>Contratar plano Avançado</span></a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Seção de Serviços de Jardinagem e Paisagismo -->
-        <h1>Serviços de Jardinagem e Paisagismo</h1>
-        <div class="services">
-            <div class="service">
-                <h3>Limpeza de Quintal ou Terreno</h3>
-                <ul>
-                    <li>Remoção de entulho e lixo</li>
-                    <li>Limpeza e organização de espaços externos</li>
-                    <li>Capinação e remoção de mato</li>
-                    <li>Rastelagem e poda de grama</li>
-                </ul>
-               
-            </div>
-
-            <div class="service">
-                <h3>Manutenção de Jardins</h3>
-                <ul>
-                    <li>Rega e irrigação adequadas</li>
-                    <li>Podas de plantas ornamentais</li>
-                    <li>Adubação e nutrição das plantas</li>
-                    <li>Controle de pragas e doenças</li>
-                </ul>
-            </div>
-
-            <div class="service">
-                <h3>Criação de Jardins</h3>
-                <ul>
-                    <li>Planejamento e design de jardins grandes e pequenos</li>
-                    <li>Seleção de plantas adequadas para o clima e solo</li>
-                    <li>Instalação de sistemas de irrigação eficientes</li>
-                    <li>Criação de caminhos, cercas e outros elementos paisagísticos</li>
-                </ul>
-            </div>
-
-            <div class="service">
-                <h3>Podas de Árvores e Arbustos</h3>
-                <ul>
-                    <li>Podas para controle de crescimento</li>
-                    <li>Manutenção e poda de árvores frutíferas</li>
-                    <li>Poda estética para valorização da paisagem</li>
-                    <li>Retirada de galhos secos e danificados</li>
-                </ul>
-            </div>
-
-            <div class="service">
-                <h3>Limpeza de Gramado e Controle de Pragas</h3>
-                <ul>
-                    <li>Rastreamento e remoção de pragas do gramado</li>
-                    <li>Restauração do gramado danificado</li>
-                    <li>Aplicação de fertilizantes e correção do solo</li>
-                </ul>
-            </div>
-
-            <div class="service">
-                <h3>Pintura e Manutenção de Elementos Externos</h3>
-                <ul>
-                    <li>Pintura de cercas, portões e outros elementos</li>
-                    <li>Reparo de pequenos danos nas estruturas externas</li>
-                    <li>Manutenção de calçadas e espaços decorativos</li>
-                </ul>
-            </div>
-
-            <div class="service">
-                <h3>Criação de Paisagens Temáticas</h3>
-                <ul>
-                    <li>Jardins de inverno, jardins zen e mais</li>
-                    <li>Instalação de fontes e lagos ornamentais</li>
-                    <li>Construção de espaços de convivência ao ar livre</li>
-                </ul>
-            </div>
-
-            <div class="service">
-                <h3>Consultoria para Projetos Paisagísticos</h3>
-                <ul>
-                    <li>Consultoria para novos projetos de paisagismo</li>
-                    <li>Reforma e modernização de jardins existentes</li>
-                    <li>Aconselhamento sobre escolha de plantas e materiais</li>
-                </ul>
-            </div>
-        </div>
-    </div>
     
-            </div>
-        </div>
-    </section>
+<div class="planos">
+  <h2>Planos de Jardinagem e Paisagismo</h2>
+  <div class="plan-item">
+    <h3>Plano Básico</h3>
+    <ul>
+      <li>Planejamento inicial do jardim</li>
+      <li>Seleção de plantas fáceis de cuidar</li>
+      <li>Execução de plantio básico</li>
+      <li>Rega manual ocasional</li>
+    </ul>
+    <p><strong>Valor:</strong> R$ 40,00/hora</p>
+    <button class="contratar-btn">Contratar Plano Básico</button>
+  </div>
+  <div class="plan-item">
+    <h3>Plano Padrão</h3>
+    <ul>
+      <li>Planejamento personalizado do jardim</li>
+      <li>Seleção de plantas ornamentais e florais</li>
+      <li>Execução completa do plantio</li>
+      <li>Sistema de irrigação automatizado</li>
+      <li>Manutenção mensal incluída</li>
+    </ul>
+    <p><strong>Valor:</strong> R$ 70,00/hora</p>
+    <button class="contratar-btn">Contratar Plano Padrão</button>
+  </div>
+  <div class="plan-item">
+    <h3>Plano Avançado</h3>
+    <ul>
+      <li>Planejamento detalhado e exclusivo</li>
+      <li>Seleção de plantas de diferentes texturas e cores</li>
+      <li>Execução completa do projeto paisagístico</li>
+      <li>Instalação de fontes e outros elementos decorativos</li>
+      <li>Sistema de irrigação e drenagem completo</li>
+      <li>Manutenção semestral incluída</li>
+    </ul>
+    <p><strong>Valor:</strong> R$ 100,00/hora</p>
+    <button class="contratar-btn">Contratar Plano Avançado</button>
+  </div>
+</div>
+
+<div class="services">
+  <h2>Serviços de Jardinagem e Paisagismo</h2>
+  <div class="service-item">
+    <h3>Limpeza de Quintal ou Terreno</h3>
+    <ul>
+      <li>Remoção de entulho e lixo</li>
+      <li>Limpeza e organização de espaços externos</li>
+      <li>Capinação e remoção de mato</li>
+      <li>Rastelagem e poda de grama</li>
+    </ul>
+  </div>
+  <div class="service-item">
+    <h3>Manutenção de Jardins</h3>
+    <ul>
+      <li>Rega e irrigação adequadas</li>
+      <li>Podas de plantas ornamentais</li>
+      <li>Adubação e nutrição das plantas</li>
+      <li>Controle de pragas e doenças</li>
+    </ul>
+  </div>
+  <div class="service-item">
+    <h3>Criação de Jardins</h3>
+    <ul>
+      <li>Planejamento e design de jardins grandes e pequenos</li>
+      <li>Seleção de plantas adequadas para o clima e solo</li>
+      <li>Instalação de sistemas de irrigação eficientes</li>
+      <li>Criação de caminhos, cercas e outros elementos paisagísticos</li>
+    </ul>
+  </div>
+  <div class="service-item">
+    <h3>Podas de Árvores e Arbustos</h3>
+    <ul>
+      <li>Podas para controle de crescimento</li>
+      <li>Manutenção e poda de árvores frutíferas</li>
+      <li>Poda estética para valorização da paisagem</li>
+      <li>Retirada de galhos secos e danificados</li>
+    </ul>
+  </div>
+  <div class="service-item">
+    <h3>Limpeza de Gramado e Controle de Pragas</h3>
+    <ul>
+      <li>Rastreamento e remoção de pragas do gramado</li>
+      <li>Restauração do gramado danificado</li>
+      <li>Aplicação de fertilizantes e correção do solo</li>
+    </ul>
+  </div>
+  <div class="service-item">
+    <h3>Pintura e Manutenção de Elementos Externos</h3>
+    <ul>
+      <li>Pintura de cercas, portões e outros elementos</li>
+      <li>Reparo de pequenos danos nas estruturas externas</li>
+      <li>Manutenção de calçadas e espaços decorativos</li>
+    </ul>
+  </div>
+  <div class="service-item">
+    <h3>Criação de Paisagens Temáticas</h3>
+    <ul>
+      <li>Jardins de inverno, jardins zen e mais</li>
+      <li>Instalação de fontes e lagos ornamentais</li>
+      <li>Construção de espaços de convivência ao ar livre</li>
+    </ul>
+  </div>
+  <div class="service-item">
+    <h3>Consultoria para Projetos Paisagísticos</h3>
+    <ul>
+      <li>Consultoria para novos projetos de paisagismo</li>
+      <li>Reforma e modernização de jardins existentes</li>
+      <li>Aconselhamento sobre escolha de plantas e materiais</li>
+    </ul>
+  </div>
+</div>
+
 
     <footer class="footer-area">
         <div class="footer-top section-padding">
