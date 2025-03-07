@@ -1036,8 +1036,8 @@ blockquote p {
 
 .single-gallery img {
     width: 100%;
-    margin-top: 9px;
-
+/*     margin-top: 9px;
+ */
 .gallery-style-two {
     background-color: #F6F6F6;
 }
