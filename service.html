@@ -29,185 +29,180 @@
     <link rel="stylesheet" href="style.css">
 
 
-    <!-- CSS -->
+   <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+            <div class="section-title light-title">
+                <h2>Happy <span>Clients</span></h2>
+                <p>Nossos clientes satisfeitos variam de corporações multinacionais como a Gerdau a pequenas empresas, proprietários e gestores de escritórios. Nosso compromisso é com a excelência em cada projeto.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="client-wrapper owl-carousel">
+                <!-- Cliente 1 -->
+                <div class="single-client-info text-center">
+                    <h3>Vanessa</h3>
+                    <h4>Supervisora da Gerdau</h4>
+                    <div class="rate">
+                        <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i>
+                    </div>
+                    <p>"O serviço prestado pelo Breno superou nossas expectativas! Profissionalismo, dedicação e qualidade impecável."</p>
+                    <div class="social-link">
+                        <a href="https://linkedin.com/in/vanessa-fleury-3a071b31" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://instagram.com/vahh.fleury" target="_blank"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Cliente 2 -->
+                <div class="single-client-info text-center">
+                    <h3>Veloz & Vladimir</h3>
+                    <h4>Colaboradores da Gerdau</h4>
+                    <div class="rate">
+                        <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i>
+                    </div>
+                    <p>"O paisagismo transformou nosso ambiente. Breno realmente entende do que faz!"</p>
+                </div>
+                
+                <!-- Cliente 3 -->
+                <div class="single-client-info text-center">
+                    <h3>Gisele Gomes</h3>
+                    <h4>Supervisora na Gerdau</h4>
+                    <div class="rate">
+                        <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i>
+                    </div>
+                    <p>"Trabalho impecável! Qualidade, compromisso e atenção aos detalhes são marcas do serviço do Breno."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <div class="client-wrapper owl-carousel">
+                <!-- Cliente 4 -->
+                <div class="single-client-info text-center">
+                    <img src="img/client/joao1.jpg" alt="João Marques" class="img-fluid rounded-circle mb-3">
+                    <h3>João Marques</h3>
+                    <h4>Empresário</h4>
+                    <div class="rate">
+                        <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i>
+                    </div>
+                    <p>"Meu escritório ganhou vida nova! Breno tem um talento incrível para transformar ambientes."</p>
+                </div>
+                
+                <!-- Cliente 5 -->
+                <div class="single-client-info text-center">
+                    <img src="img/client/camila1.jpg" alt="Camila Ferreira" class="img-fluid rounded-circle mb-3">
+                    <h3>Camila Ferreira</h3>
+                    <h4>Síndica de Condomínio</h4>
+                    <div class="rate">
+                        <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i>
+                    </div>
+                    <p>"O serviço de manutenção dos jardins do condomínio ficou impecável! Breno é dedicado e extremamente competente."</p>
+                </div>
+                
+                <!-- Cliente 6 -->
+                <div class="single-client-info text-center">
+                    <img src="img/client/maria1.jpg" alt="Maria Antônia" class="img-fluid rounded-circle mb-3">
+                    <h3>Maria Antônia</h3>
+                    <h4>Proprietária de Terreno</h4>
+                    <div class="rate">
+                        <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i>
+                    </div>
+                    <p>"Meu lote estava abandonado, mas após o serviço de capinação e limpeza, ficou perfeito para venda! Trabalho excelente!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CSS -->
 <style>
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-/* Título da seção */
-.section-title h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 1.3;
-    text-align: center;
-}
-
-/* Destacar o span dentro do h2 */
-.section-title span {
-    color: #3498db; /* Azul para destaque */
-}
-
-/* Parágrafo da seção */
-.section-title p {
-    font-size: 1.125rem;
-    color: #7f8c8d;
-    margin-top: 1rem;
-    line-height: 1.6;
-    text-align: center;
-}
-
-/* Estilo dos depoimentos */
-.single-client-info {
-    background-color: #ffffff; /* Cor de fundo branca para depoimentos */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.single-client-info:hover {
-    transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
-}
-
-/* Nome dos clientes */
-.single-client-info h3 {
-    font-size: 1.25rem;
-    color: #2c3e50;
-    margin-top: 1rem;
-    text-align: center;
-}
-
-/* Cargo dos clientes */
-.single-client-info h4 {
-    color: #95a5a6;
-    font-size: 1rem;
-    text-align: center;
-    margin-top: 0.5rem;
-}
-
-/* Depoimento dos clientes */
-.single-client-info p {
-    font-size: 1rem;
-    color: #34495e;
-    margin-top: 1rem;
-    line-height: 1.8;
-    text-align: center;
-}
-
-/* Ícones sociais com transição */
-.social-link a {
-    color: #2ecc71;
-    margin: 0 0.5rem;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-}
-
-.social-link a:hover {
-    color: #27ae60;
-}
-
-/* Estilos para os carrosséis (clientes) */
-.owl-carousel .item {
-    padding: 20px;
-}
-
-/* Ajustes no layout para telas menores */
-@media (max-width: 1200px) {
     .section-title h2 {
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 992px) {
-    .section-title h2 {
-        font-size: 2.2rem;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 1rem;
     }
 
-    .section-title p {
-        font-size: 1.1rem;
+    .section-title span {
+        color: #007bff;
+    }
+
+    .client-wrapper {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .single-client-info {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .single-client-info:hover {
+        transform: translateY(-10px);
     }
 
     .single-client-info h3 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        color: #333;
+        margin-top: 1rem;
     }
 
     .single-client-info h4 {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .section-title h2 {
-        font-size: 1.8rem;
-    }
-
-    .section-title p {
+        color: #777;
         font-size: 1rem;
     }
 
-    .single-client-info h3 {
-        font-size: 1.1rem;
-    }
-
-    .single-client-info h4 {
-        font-size: 0.9rem;
+    .rate i {
+        color: #f39c12;
+        margin: 0.1rem;
     }
 
     .social-link a {
-        font-size: 1.3rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .section-title h2 {
-        font-size: 1.6rem;
+        color: #007bff;
+        margin: 0 0.5rem;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
     }
 
-    .section-title p {
-        font-size: 0.95rem;
+    .social-link a:hover {
+        color: #0056b3;
     }
 
-    .single-client-info h3 {
-        font-size: 1rem;
+    .single-client-info img {
+        max-width: 120px;
+        border-radius: 50%;
     }
 
-    .single-client-info h4 {
-        font-size: 0.8rem;
+    /* Carousel */
+    .owl-carousel .owl-item {
+        display: flex;
+        justify-content: center;
     }
 
-    .social-link a {
-        font-size: 1.2rem;
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .client-wrapper {
+            flex-direction: column;
+        }
+
+        .single-client-info {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
     }
-}
-
-/* Background para o rodapé ou seção final */
-.footer {
-    background-color: #2c3e50;
-    color: #ecf0f1;
-    padding: 30px 0;
-    text-align: center;
-    font-size: 1rem;
-}
-
-.footer a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-}
-
 </style>
+
 
 </head>
 
