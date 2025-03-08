@@ -27,6 +27,92 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- style css -->
     <link rel="stylesheet" href="style.css">
+
+
+    <!-- CSS -->
+<style>
+    .section-title h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 1rem;
+    }
+
+    .section-title span {
+        color: #007bff;
+    }
+
+    .client-wrapper {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .single-client-info {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        padding: 2rem;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .single-client-info:hover {
+        transform: translateY(-10px);
+    }
+
+    .single-client-info h3 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-top: 1rem;
+    }
+
+    .single-client-info h4 {
+        color: #777;
+        font-size: 1rem;
+    }
+
+    .rate i {
+        color: #f39c12;
+        margin: 0.1rem;
+    }
+
+    .social-link a {
+        color: #007bff;
+        margin: 0 0.5rem;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+    }
+
+    .social-link a:hover {
+        color: #0056b3;
+    }
+
+    .single-client-info img {
+        max-width: 120px;
+        border-radius: 50%;
+    }
+
+    /* Carousel */
+    .owl-carousel .owl-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+        .client-wrapper {
+            flex-direction: column;
+        }
+
+        .single-client-info {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -258,97 +344,97 @@
         Client Part Start
         =====================
     -->
-   <section class="client-area section-padding parallax">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 text-center">
-                <div class="section-title light-title">
-                    <h2>Happy <span>Clients</span></h2>
-                    <p>Nossos clientes satisfeitos variam de corporações multinacionais como a Gerdau a pequenas empresas, proprietários e gestores de escritórios. Nosso compromisso é com a excelência em cada projeto.</p>
-                </div>
+   <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+            <div class="section-title light-title">
+                <h2>Happy <span>Clients</span></h2>
+                <p>Nossos clientes satisfeitos variam de corporações multinacionais como a Gerdau a pequenas empresas, proprietários e gestores de escritórios. Nosso compromisso é com a excelência em cada projeto.</p>
             </div>
         </div>
-        
-        <div class="row">
-            <div class="col-md-12">
-                <div class="client-wrapper owl-carousel">
-                    <!-- Cliente 1 -->
-                    <div class="single-client-info text-center">
-                        <h3>Vanessa</h3>
-                        <h4>Supervisora da Gerdau</h4>
-                        <div class="rate">
-                            <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i>
-                        </div>
-                        <p>"O serviço prestado pelo Breno superou nossas expectativas! Profissionalismo, dedicação e qualidade impecável."</p>
-                        <div class="social-link">
-                            <a href="https://linkedin.com/in/vanessa-fleury-3a071b31" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            <a href="https://instagram.com/vahh.fleury" target="_blank"><i class="fa fa-instagram"></i></a>
-                        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="client-wrapper owl-carousel">
+                <!-- Cliente 1 -->
+                <div class="single-client-info text-center">
+                    <h3>Vanessa</h3>
+                    <h4>Supervisora da Gerdau</h4>
+                    <div class="rate">
+                        <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i>
                     </div>
-                    
-                    <!-- Cliente 2 -->
-                    <div class="single-client-info text-center">
-                        <h3>Veloz & Vladimir</h3>
-                        <h4>Colaboradores da Gerdau</h4>
-                        <div class="rate">
-                            <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i>
-                        </div>
-                        <p>"O paisagismo transformou nosso ambiente. Breno realmente entende do que faz!"</p>
-                    </div>
-                    
-                    <!-- Cliente 3 -->
-                    <div class="single-client-info text-center">
-                        <h3>Gisele Gomes</h3>
-                        <h4>Supervisora na Gerdau</h4>
-                        <div class="rate">
-                            <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i>
-                        </div>
-                        <p>"Trabalho impecável! Qualidade, compromisso e atenção aos detalhes são marcas do serviço do Breno."</p>
+                    <p>"O serviço prestado pelo Breno superou nossas expectativas! Profissionalismo, dedicação e qualidade impecável."</p>
+                    <div class="social-link">
+                        <a href="https://linkedin.com/in/vanessa-fleury-3a071b31" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://instagram.com/vahh.fleury" target="_blank"><i class="fa fa-instagram"></i></a>
                     </div>
                 </div>
-            </div>
-        </div>
-        
-        <div class="row mt-5">
-            <div class="col-md-12">
-                <div class="client-wrapper owl-carousel">
-                    <!-- Cliente 4 -->
-                    <div class="single-client-info text-center">
-                        <img src="img/client/joao1.jpg" alt="João Marques" class="img-fluid rounded-circle mb-3">
-                        <h3>João Marques</h3>
-                        <h4>Empresário</h4>
-                        <div class="rate">
-                            <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i>
-                        </div>
-                        <p>"Meu escritório ganhou vida nova! Breno tem um talento incrível para transformar ambientes."</p>
+                
+                <!-- Cliente 2 -->
+                <div class="single-client-info text-center">
+                    <h3>Veloz & Vladimir</h3>
+                    <h4>Colaboradores da Gerdau</h4>
+                    <div class="rate">
+                        <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i>
                     </div>
-                    
-                    <!-- Cliente 5 -->
-                    <div class="single-client-info text-center">
-                        <img src="img/client/camila1.jpg" alt="Camila Ferreira" class="img-fluid rounded-circle mb-3">
-                        <h3>Camila Ferreira</h3>
-                        <h4>Síndica de Condomínio</h4>
-                        <div class="rate">
-                            <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i>
-                        </div>
-                        <p>"O serviço de manutenção dos jardins do condomínio ficou impecável! Breno é dedicado e extremamente competente."</p>
+                    <p>"O paisagismo transformou nosso ambiente. Breno realmente entende do que faz!"</p>
+                </div>
+                
+                <!-- Cliente 3 -->
+                <div class="single-client-info text-center">
+                    <h3>Gisele Gomes</h3>
+                    <h4>Supervisora na Gerdau</h4>
+                    <div class="rate">
+                        <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i>
                     </div>
-                    
-                    <!-- Cliente 6 -->
-                    <div class="single-client-info text-center">
-                        <img src="img/client/maria1.jpg" alt="Maria Antônia" class="img-fluid rounded-circle mb-3">
-                        <h3>Maria Antônia</h3>
-                        <h4>Proprietária de Terreno</h4>
-                        <div class="rate">
-                            <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i>
-                        </div>
-                        <p>"Meu lote estava abandonado, mas após o serviço de capinação e limpeza, ficou perfeito para venda! Trabalho excelente!"</p>
-                    </div>
+                    <p>"Trabalho impecável! Qualidade, compromisso e atenção aos detalhes são marcas do serviço do Breno."</p>
                 </div>
             </div>
         </div>
     </div>
-</section>
+
+    <div class="row mt-5">
+        <div class="col-md-12">
+            <div class="client-wrapper owl-carousel">
+                <!-- Cliente 4 -->
+                <div class="single-client-info text-center">
+                    <img src="img/client/joao1.jpg" alt="João Marques" class="img-fluid rounded-circle mb-3">
+                    <h3>João Marques</h3>
+                    <h4>Empresário</h4>
+                    <div class="rate">
+                        <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i>
+                    </div>
+                    <p>"Meu escritório ganhou vida nova! Breno tem um talento incrível para transformar ambientes."</p>
+                </div>
+                
+                <!-- Cliente 5 -->
+                <div class="single-client-info text-center">
+                    <img src="img/client/camila1.jpg" alt="Camila Ferreira" class="img-fluid rounded-circle mb-3">
+                    <h3>Camila Ferreira</h3>
+                    <h4>Síndica de Condomínio</h4>
+                    <div class="rate">
+                        <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i>
+                    </div>
+                    <p>"O serviço de manutenção dos jardins do condomínio ficou impecável! Breno é dedicado e extremamente competente."</p>
+                </div>
+                
+                <!-- Cliente 6 -->
+                <div class="single-client-info text-center">
+                    <img src="img/client/maria1.jpg" alt="Maria Antônia" class="img-fluid rounded-circle mb-3">
+                    <h3>Maria Antônia</h3>
+                    <h4>Proprietária de Terreno</h4>
+                    <div class="rate">
+                        <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i> <i class="fa fa-heart"></i>
+                    </div>
+                    <p>"Meu lote estava abandonado, mas após o serviço de capinação e limpeza, ficou perfeito para venda! Trabalho excelente!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
     <!--
         =====================
