@@ -8,58 +8,59 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <style>
-        .testimonial-section {
+        body {
             background: url('img/background-garden.jpg') no-repeat center center/cover;
+        }
+        .testimonial-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .swiper-slide {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #2d6a4f;
         }
     </style>
 </head>
 <body>
-    <section class="py-16 text-white testimonial-section">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold mb-4">Nossos <span class="text-yellow-400">Clientes Satisfeitos</span></h2>
+    <section class="py-16 text-white text-center">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold mb-4">Nossos <span class="text-green-500">Clientes Satisfeitos</span></h2>
             <p class="text-lg">Depoimentos de clientes que confiam em nosso trabalho e excelência.</p>
         </div>
     </section>
     
-    <div class="container mx-auto py-12 px-4">
-        <div class="swiper mySwiper relative">
+    <div class="testimonial-container">
+        <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <!-- Cliente 1 -->
-                <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="swiper-slide">
                     <img src="img/client/vanessa.jpg" alt="Vanessa" class="w-24 h-24 mx-auto rounded-full mb-3">
                     <h3 class="text-xl font-bold">Vanessa</h3>
                     <h4 class="text-gray-600">Supervisora da Gerdau</h4>
                     <p class="text-gray-800 mt-4">"O serviço prestado pelo Breno superou nossas expectativas! Profissionalismo, dedicação e qualidade impecável."</p>
-                    <div class="mt-4">
-                        <a href="#" class="text-blue-600 mx-2"><i class="fa fa-linkedin"></i></a>
-                        <a href="#" class="text-pink-600 mx-2"><i class="fa fa-instagram"></i></a>
-                    </div>
                 </div>
-                <!-- Cliente 2 -->
-                <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="swiper-slide">
                     <img src="img/client/joao.jpg" alt="João Marques" class="w-24 h-24 mx-auto rounded-full mb-3">
                     <h3 class="text-xl font-bold">João Marques</h3>
                     <h4 class="text-gray-600">Empresário</h4>
                     <p class="text-gray-800 mt-4">"Meu escritório ganhou vida nova! Breno tem um talento incrível para transformar ambientes."</p>
-                    <div class="mt-4">
-                        <a href="#" class="text-blue-600 mx-2"><i class="fa fa-linkedin"></i></a>
-                        <a href="#" class="text-pink-600 mx-2"><i class="fa fa-instagram"></i></a>
-                    </div>
                 </div>
-                <!-- Cliente 3 -->
-                <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg text-center">
+                <div class="swiper-slide">
                     <img src="img/client/camila.jpg" alt="Camila Ferreira" class="w-24 h-24 mx-auto rounded-full mb-3">
                     <h3 class="text-xl font-bold">Camila Ferreira</h3>
                     <h4 class="text-gray-600">Síndica de Condomínio</h4>
                     <p class="text-gray-800 mt-4">"O serviço de manutenção dos jardins do condomínio ficou impecável! Breno é dedicado e extremamente competente."</p>
-                    <div class="mt-4">
-                        <a href="#" class="text-blue-600 mx-2"><i class="fa fa-linkedin"></i></a>
-                        <a href="#" class="text-pink-600 mx-2"><i class="fa fa-instagram"></i></a>
-                    </div>
                 </div>
             </div>
-            <div class="swiper-button-next text-green-600"></div>
-            <div class="swiper-button-prev text-green-600"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
             <div class="swiper-pagination"></div>
         </div>
     </div>
