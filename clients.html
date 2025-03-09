@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depoimentos de Clientes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <style>
+        .testimonial-section {
+            background: url('img/background-garden.jpg') no-repeat center center/cover;
+        }
+    </style>
+</head>
+<body>
+    <section class="py-16 text-white testimonial-section">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Nossos <span class="text-yellow-400">Clientes Satisfeitos</span></h2>
+            <p class="text-lg">Depoimentos de clientes que confiam em nosso trabalho e excelência.</p>
+        </div>
+    </section>
+    
+    <div class="container mx-auto py-12 px-4">
+        <div class="swiper mySwiper relative">
+            <div class="swiper-wrapper">
+                <!-- Cliente 1 -->
+                <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg text-center">
+                    <img src="img/client/vanessa.jpg" alt="Vanessa" class="w-24 h-24 mx-auto rounded-full mb-3">
+                    <h3 class="text-xl font-bold">Vanessa</h3>
+                    <h4 class="text-gray-600">Supervisora da Gerdau</h4>
+                    <p class="text-gray-800 mt-4">"O serviço prestado pelo Breno superou nossas expectativas! Profissionalismo, dedicação e qualidade impecável."</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-blue-600 mx-2"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" class="text-pink-600 mx-2"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <!-- Cliente 2 -->
+                <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg text-center">
+                    <img src="img/client/joao.jpg" alt="João Marques" class="w-24 h-24 mx-auto rounded-full mb-3">
+                    <h3 class="text-xl font-bold">João Marques</h3>
+                    <h4 class="text-gray-600">Empresário</h4>
+                    <p class="text-gray-800 mt-4">"Meu escritório ganhou vida nova! Breno tem um talento incrível para transformar ambientes."</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-blue-600 mx-2"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" class="text-pink-600 mx-2"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <!-- Cliente 3 -->
+                <div class="swiper-slide bg-white p-6 rounded-lg shadow-lg text-center">
+                    <img src="img/client/camila.jpg" alt="Camila Ferreira" class="w-24 h-24 mx-auto rounded-full mb-3">
+                    <h3 class="text-xl font-bold">Camila Ferreira</h3>
+                    <h4 class="text-gray-600">Síndica de Condomínio</h4>
+                    <p class="text-gray-800 mt-4">"O serviço de manutenção dos jardins do condomínio ficou impecável! Breno é dedicado e extremamente competente."</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-blue-600 mx-2"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" class="text-pink-600 mx-2"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next text-green-600"></div>
+            <div class="swiper-button-prev text-green-600"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+            },
+        });
+    </script>
+</body>
+</html>
