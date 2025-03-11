@@ -95,6 +95,8 @@ input:focus {
 
 p {
     margin: 0 0 15px;
+    color: lightyellow;
+    font-weight: bold;
 }
 
 .mt {
