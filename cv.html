@@ -1,47 +1,3 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html lang="en" class="no-js">
-<!--<![endif]-->
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- ======= titles ======= -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="urosd">
-    <!-- ======= favicon ======= -->
-    <link rel="icon" type="image/png" href="favicon.png">
-    <!-- ======= Google Fonts ======= -->
-    <!-- Raleway Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
-    <!-- Open+Sans Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    <!-- ======= All css ======= -->
-    <!-- normalize css -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <!-- style css -->
-    <link rel="stylesheet" href="style.css">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume | Breno Martins</title>
-    
-    <!-- Raleway Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
-    <!-- Open+Sans Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    
-    <!-- normalize css -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <!-- style css -->
-    <link rel="stylesheet" href="style.css">
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,6 +33,7 @@
             color: white;
             margin-right: 15px;
             text-decoration: none;
+            font-size: 1rem;
         }
 
         .slogan p {
@@ -86,7 +43,7 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: auto;
             background: #fff;
             padding: 20px;
@@ -99,11 +56,63 @@
 
         .about-me h2 {
             color: #228B22;
+            font-size: 2em;
         }
 
         .about-me p {
             font-size: 1.1em;
             margin-bottom: 20px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .top-header-info {
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .top-header-info a {
+                display: block;
+                margin-bottom: 10px;
+                font-size: 1rem;
+            }
+
+            .slogan p {
+                font-size: 1.2em;
+                text-align: center;
+            }
+
+            .about-me h2 {
+                font-size: 1.8em;
+                text-align: center;
+            }
+
+            .about-me p {
+                font-size: 1em;
+                text-align: center;
+            }
+
+            .container {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .slogan p {
+                font-size: 1em;
+            }
+
+            .top-header-info a {
+                font-size: 0.9rem;
+            }
+
+            .about-me h2 {
+                font-size: 1.6em;
+            }
+
+            .about-me p {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
@@ -133,55 +142,13 @@
 
     <div class="container">
         <div class="about-me">
-        <div class="img-section">
-            <img src="https://via.placeholder.com/1200x800" alt="Breno Martins">
-        </div>
-
-        
             <h2>About Me</h2>
             <p>Hello! My name is Breno Martins, and I am a passionate programmer and developer with a strong background in technology. I graduated in Technologies from Universidade Privada de São Paulo, which is ranked 1st in the market and considered the best private university in Brazil. Along with my academic achievements, I hold numerous certifications in technology from high-quality institutions.</p>
             <p>Additionally, I am certified as a judicial assistant. Over the years, I have received significant recognition in the tech field, with numerous recommendations and awards for my work. I specialize in software development, automation, and creating innovative solutions to optimize and enhance productivity.</p>
             <p>Currently, I am starting up in the market as an entrepreneur in the gardening and landscaping field, bringing my skills and passion for creating beautiful and functional outdoor spaces to life. My goal is to combine my expertise in technology with my new venture to offer innovative solutions in landscaping and maintenance.</p>
             <p>In addition to my technical skills, I have a strong command of several languages, including English, Russian, Portuguese, and others, which helps me connect with people from diverse backgrounds and cultures.</p>
         </div>
-        <div class="footer">
-            <p>&copy; 2024 Breno Martins. All Rights Reserved.</p>
-        </div>
     </div>
 
-
-
-
-    <!-- ======= All js ======= -->
-    <!-- modernizr js -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <!-- jQuery min js -->
-    <script src="js/vendor/jquery-3.2.1.min.js"></script>
-    <!-- sticky js -->
-    <script src="js/jquery.sticky.js"></script>
-    <!-- ajaxchimp js -->
-    <script src="js/ajaxchimp.min.js"></script>
-    <!-- owl carousel js -->
-    <script src="js/owl.carousel.min.js"></script>
-    <!-- ajax contact js -->
-    <script src="js/ajax-contact.js"></script>
-    <!-- jarallax js -->
-    <script src="js/jarallax.min.js"></script>
-    <!-- jarallax js -->
-    <script src="js/lightbox.min.js"></script>
-    <!-- counterup js -->
-    <script src="js/jquery.counterup.min.js"></script>
-    <!-- waypoints js -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <!-- waypoints js -->
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <!-- slicknav js -->
-    <script src="js/slicknav.min.js"></script>
-    <!-- google map -->
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyCMSfq40Bo2KuQvQVSQE1gmmgJdxEbDS0Y"></script>
-    <script src="js/gmap3.min.js"></script>
-    <!-- main js -->
-    <script src="js/main.js"></script>
 </body>
-
 </html>
