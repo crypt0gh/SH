@@ -1075,7 +1075,7 @@ blockquote p {
 .progress-area:before {
     position: absolute;
     top: 39px;
-/*     top: 0; */
+    top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, .7);
     content: "";
