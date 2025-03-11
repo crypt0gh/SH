@@ -1129,6 +1129,7 @@ blockquote p {
 
 .single-member img {
     width: 100%;
+    border: rigde;
 }
 
 .member-title {
