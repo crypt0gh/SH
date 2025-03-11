@@ -1,159 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    <title>About Me | Breno Martins</title>
-    <style>
-        /* Global Reset and Base Styling */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            line-height: 1.6;
-        }
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Breno Martins - Developer & Entrepreneur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
-        /* Header Area Styling */
-        .header-area {
-            background-color: #003111;
-            color: white;
-            padding: 20px 0;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .top-header-area {
-            background-color: #228B22;
-            color: white;
-            padding: 10px 0;
-        }
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
 
-        .top-header-info a {
-            color: white;
-            margin-right: 15px;
-            text-decoration: none;
-            font-size: 1rem;
-        }
+header {
+    background-color: #333;
+    padding: 20px 0;
+    color: white;
+}
 
-        .slogan p {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: lightyellow;
-            text-align: center;
-        }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
 
-        /* Container for Main Content */
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
+nav .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
 
-        /* About Section */
-        .about-me {
-            margin-top: 20px;
-        }
+.nav-links {
+    list-style: none;
+    display: flex;
+}
 
-        .about-me h2 {
-            color: #228B22;
-            font-size: 2em;
-            text-align: center;
-        }
+.nav-links li {
+    margin-left: 20px;
+}
 
-        .about-me p {
-            font-size: 1.1em;
-            margin-bottom: 20px;
-            text-align: justify;
-	    color: lightyellow;
-        }
-      
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
 
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .top-header-info {
-                text-align: center;
-                margin-top: 10px;
-            }
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
 
-            .top-header-info a {
-                display: block;
-                margin-bottom: 10px;
-                font-size: 1rem;
-            }
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
 
-            .slogan p {
-                font-size: 1.2em;
-            }
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
 
-            .about-me h2 {
-                font-size: 1.8em;
-            }
+.home {
+    background-color: #4CAF50;
+    color: white;
+}
 
-            .about-me p {
-                font-size: 1em;
-                text-align: center;
-		color: lightyellow;
-            }
+.services, .blog {
+    background-color: white;
+    color: #333;
+}
 
-            .container {
-                padding: 10px;
-            }
-        }
+.services .service {
+    margin-bottom: 30px;
+}
 
-        @media (max-width: 480px) {
-            .footer-widget {
-                text-align: center;
-                margin-bottom: 20px;
-            }
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
 
-            .footer-widget h2 {
-                font-size: 1.2em;
-            }
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
 
-            .footer-widget p, .footer-widget ul {
-                font-size: 0.9em;
-            }
+    .nav-links.active {
+        display: block;
+    }
 
-            .footer-area {
-                padding: 40px 0;
-            }
-        }
-    </style>
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (
+</style>
+
 </head>
-<body>
 
-    <header class="header-area">
-        <div class="top-header-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7 text-right">
-                        <div class="top-header-info">
-                            <a href="mailto:contactsweethome2024@gmail.com"><i class="fa fa-envelope"></i>E-mail us</a>
-                            <a href="https://wa.me/5531998353307"><i class="fa fa-whatsapp"></i>+5531998353307</a>
-                            <a href="https://wa.me/5531990735791"><i class="fa fa-whatsapp"></i>+5531990735791</a>
-                            <a href="#"><i class="fa fa-clock-o"></i> Mon – Fri : 9am - 6pm</a>
-                        </div>
-                    </div>
-                </div>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">Breno Martins</a>
             </div>
-        </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
     </header>
 
-    <div class="container">
-        <div class="about-me">
-	<img src="https://via.placeholder.com/150" alt="Breno Martins" class="profile-img">
-
-            <h2>About Me</h2>
-            <p>Hello! My name is Breno Martins, and I am a passionate programmer and developer with a strong background in technology. I graduated in Technologies from Universidade Privada de São Paulo, which is ranked 1st in the market and considered the best private university in Brazil. Along with my academic achievements, I hold numerous certifications in technology from high-quality institutions.</p>
-            <p>Additionally, I am certified as a judicial assistant. Over the years, I have received significant recognition in the tech field, with numerous recommendations and awards for my work. I specialize in software development, automation, and creating innovative solutions to optimize and enhance productivity.</p>
-            <p>Currently, I am starting up in the market as an entrepreneur in the gardening and landscaping field, bringing my skills and passion for creating beautiful and functional outdoor spaces to life. My goal is to combine my expertise in technology with my new venture to offer innovative solutions in landscaping and maintenance.</p>
-            <p>In addition to my technical skills, I have a strong command of several languages, including English, Russian, Portuguese, and others, which helps me connect with people from diverse backgrounds and cultures.</p>
+    <section id="home" class="section home">
+        <div class="container">
+            <h1>Hello! I'm Breno Martins</h1>
+            <p>I am a passionate programmer and developer with a strong background in technology. I graduated in Technologies from Universidade Privada de São Paulo, which is ranked 1st in the market and considered the best private university in Brazil. Along with my academic achievements, I hold numerous certifications in technology from high-quality institutions.</p>
+            <p>Additionally, I am certified as a judicial assistant and have received significant recognition in the tech field, with numerous recommendations and awards for my work. I specialize in software development, automation, and creating innovative solutions to optimize and enhance productivity.</p>
+            <p>In addition to my work in technology, I have extensive experience in the construction sector, particularly in painting, maintenance, and other related tasks. This hands-on experience has allowed me to develop a practical and solution-oriented approach to various challenges.</p>
+            <p>Currently, I am also venturing into the gardening and landscaping field. I specialize in creating and maintaining gardens, as well as offering landscaping solutions. My goal is to combine my expertise in technology with my new venture to provide innovative solutions in landscaping and maintenance.</p>
+            <p>In addition to my technical and entrepreneurial skills, I am proficient in several languages, including English, Russian, and Portuguese, which enables me to connect with people from diverse backgrounds and cultures.</p>
         </div>
-    </div>
+    </section>
 
+    <section id="services" class="section services">
+        <div class="container">
+            <h2>Services</h2>
+            <div class="service">
+                <h3>Software Development</h3>
+                <p>Creating innovative solutions to optimize productivity and improve business performance.</p>
+            </div>
+            <div class="service">
+                <h3>Process Automation</h3>
+                <p>Bringing smart automation to businesses to increase efficiency, streamline operations, and reduce costs.</p>
+            </div>
+            <div class="service">
+                <h3>Consulting</h3>
+                <p>Offering consulting services to help businesses leverage technology to enhance their operations and reach new heights.</p>
+            </div>
+            <div class="service">
+                <h3>Gardening & Landscaping</h3>
+                <p>Specializing in garden creation and maintenance, as well as offering landscaping solutions to design beautiful and functional outdoor spaces.</p>
+            </div>
+            <div class="service">
+                <h3>Construction and Maintenance</h3>
+                <p>With years of experience in the construction sector, I offer services in painting, general maintenance, and other related tasks, providing high-quality, practical solutions.</p>
+            </div>
+        </div>
+    </section>
 
+    <section id="blog" class="section blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <p>Explore my thoughts on technology, innovation, software development, automation, gardening, landscaping, and the construction sector.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Breno Martins. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
+
 </html>
