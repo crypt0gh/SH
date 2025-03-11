@@ -1095,7 +1095,7 @@ blockquote p {
 .single-progress-dec i.fa {
     font-size: 36px;
     display: block;
-    color: #6cbe03;
+    color: #039dec;
 }
 
 .single-progress-dec > span {
@@ -1504,9 +1504,9 @@ blockquote p {
 }
 
 .news-content h2 {
-    color: #5a5a61;
+    color: #18ef01;
     font-size: 16px;
-    font-weight: 900;
+    font-weight: bold;
     margin-bottom: 10px;
     transition: all 0.5s ease 0s;
 }
