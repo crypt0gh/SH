@@ -988,6 +988,7 @@ blockquote p {
     padding: 10px 35px;
     margin: 0;
     transition: all 0.5s ease 0s;
+    font-weight: bold;
 }
 
 .service-list ul li a:hover {
