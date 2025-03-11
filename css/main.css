@@ -863,6 +863,8 @@ ul li a.menu-active {
     font-weight: 500;
     text-transform: capitalize;
     transition: all 0.5s ease 0s;
+    color: aliceblue;
+    font-weight: bold;
 }
 
 .single-assessment a h3:hover {
